@@ -24,7 +24,7 @@ public class HelloControllerTest {
 
     @Test
     public void root() throws Exception {
-        final HttpEntity<?> response = controller.root(null, null);
+        final HttpEntity<?> response = controller.root(null, null, null);
         assertThat(response.getBody(), instanceOf(AnyResource.class));
     }
 }
